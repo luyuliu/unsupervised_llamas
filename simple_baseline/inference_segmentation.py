@@ -75,7 +75,7 @@ def folder_inference(checkpoint_file, image_folder, gray=True, binary=True, loca
     """
     out_folder = checkpoint_file + suffix
 
-    input_images = helper_scripts.get_files_from_folder(image_folder, '.png')
+    input_images = helper_scripts.get_files_from_folder(image_folder, '.jpg')
     if suffix == '_test':
         assert len(input_images) == dataset_constants.NUM_TEST_IMAGES
 
